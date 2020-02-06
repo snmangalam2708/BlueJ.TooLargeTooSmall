@@ -2,8 +2,8 @@
 /**
  * Write a description of class TooLargeTooSmall here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Sandeep NM
+ * @version 02/05/2020
  */
 public class TooLargeTooSmall {
     private Integer chosenNum;
@@ -15,9 +15,27 @@ public class TooLargeTooSmall {
         // initialise instance variables
         chosenNum = seed;
     }
-    
+
     public Integer guess(Integer g) {
-        
+        if (g == chosenNum)
+        {
+            return 0;
+        }
+
+        else
+
+        if (g < chosenNum)
+        {
+            return -1;
+        }
+
+        else
+
+        if (g > chosenNum)
+        {
+            return 1;
+        }
+
         return chosenNum;
 
     }
